@@ -6,6 +6,12 @@
     "config": "^2.0.1",
     "express": "^4.16.3",
     "google-auth-library": "^1.6.1",
-    "googleapis": "^33.0.0"
-  }
+    "googleapis": "^33.0.0",
+    "snyk": "^1.316.1"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
