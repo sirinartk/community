@@ -14,7 +14,8 @@
     "good-env": "^4.0.0",
     "redis": "^2.8.0",
     "redis-rate-limiter": "^1.2.0",
-    "winston": "^3.2.1"
+    "winston": "^3.2.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@types/express": "^4.16.1",
@@ -31,10 +32,12 @@
     "compile": "yarn tsc -p .",
     "develop": "yarn tsc-watch --onSuccess 'yarn start'",
     "fix": "gts fix",
-    "prepare": "yarn run compile",
+    "prepare": "npm run snyk-protect && yarn run compile",
     "pretest": "yarn run compile",
     "posttest": "yarn run check",
     "deploy": "cp package.json build/ && yarn run compile && gcloud functions deploy --runtime nodejs10 --trigger-http --source ./build ${FUNCTION_TARGET}",
-    "start": "cd build;functions-framework --target ${FUNCTION_TARGET};cd .."
-  }
+    "start": "cd build;functions-framework --target ${FUNCTION_TARGET};cd ..",
+    "snyk-protect": "snyk protect"
+  },
+  "snyk": true
 }
