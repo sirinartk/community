@@ -2,3 +2,4 @@ jinja2>=2.10.1
 webapp2==3.0.0b1
 GoogleAppEngineCloudStorageClient==1.9.22.1
 google-api-python-client==1.6.2
+rsa>=4.7 # not directly required, pinned by Snyk to avoid a vulnerability
