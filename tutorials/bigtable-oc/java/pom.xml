@@ -17,8 +17,8 @@
 
     <google-auth-library-oauth2-http.version>0.15.0</google-auth-library-oauth2-http.version>
     <gax.version>1.43.0</gax.version>
-    <opencensus.version>0.19.2</opencensus.version>
-    <bigtable.version>1.10.0</bigtable.version>
+    <opencensus.version>0.24.0</opencensus.version>
+    <bigtable.version>2.6.2</bigtable.version>
   </properties>
 
 
