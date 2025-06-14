@@ -2,11 +2,12 @@
 # yarn lockfile v1
 
 
-"@google-cloud/bigquery@0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@google-cloud/bigquery/-/bigquery-0.6.0.tgz#18014469a7b4bd94450753d37afeb7b57096096e"
+"@google-cloud/bigquery@0.6.1":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/@google-cloud/bigquery/-/bigquery-0.6.1.tgz#f6f73bd61489447f481de6045c5cec372b95b159"
+  integrity sha512-nNT81ta4fcqWeKnpmXXNbDWonaIHXokzEpjfjWlBCzjnG54D815zCW2DWTO7avpxZhw0XM/IS5jQdlRc2luP1A==
   dependencies:
-    "@google-cloud/common" "^0.9.0"
+    "@google-cloud/common" "^0.11.0"
     arrify "^1.0.0"
     duplexify "^3.2.0"
     extend "^3.0.0"
@@ -14,9 +15,10 @@
     stream-events "^1.0.1"
     string-format-obj "^1.0.0"
 
-"@google-cloud/common@^0.9.0":
-  version "0.9.1"
-  resolved "https://registry.yarnpkg.com/@google-cloud/common/-/common-0.9.1.tgz#c72249589046fb4dd131b8ae7dbea88bb6bcf88c"
+"@google-cloud/common@^0.11.0":
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/@google-cloud/common/-/common-0.11.0.tgz#5c94674a1ea9a4939865e342f0c1b909ca04e980"
+  integrity sha512-ACZv7RDVPSECBT2H5MspXkAUMMdugs4luygahyQQGMIk6WhhzB0Z1nWnCUK72OgGj9W34RlyIY27RrGjmEIF6w==
   dependencies:
     array-uniq "^1.0.2"
     arrify "^1.0.0"
@@ -30,6 +32,7 @@
     google-proto-files "^0.8.0"
     grpc "^1.0.0"
     is "^3.0.1"
+    log-driver "^1.2.5"
     methmeth "^1.0.0"
     modelo "^4.2.0"
     request "^2.70.0"
@@ -793,6 +796,11 @@ lodash.noop@~3.0.0:
 lodash@^4.14.0, lodash@^4.15.0:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
+
+log-driver@^1.2.5:
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/log-driver/-/log-driver-1.2.7.tgz#63b95021f0702fedfa2c9bb0a24e7797d71871d8"
+  integrity sha512-U7KCmLdqsGHBLeWqYlFA0V0Sl6P08EE1ZrmA9cxjUE0WVqT9qnyVDPz1kzpFEP0jdJuFnasWIfSd7fsaNXkpbg==
 
 long@~3:
   version "3.2.0"
